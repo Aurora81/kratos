@@ -1,6 +1,7 @@
 package main
 
 import (
+	"github.com/go-kratos/kratos/cmd/kratos/v2/internal/model"
 	"log"
 
 	"github.com/go-kratos/kratos/cmd/kratos/v2/internal/change"
@@ -25,6 +26,7 @@ func init() {
 	rootCmd.AddCommand(upgrade.CmdUpgrade)
 	rootCmd.AddCommand(change.CmdChange)
 	rootCmd.AddCommand(run.CmdRun)
+	rootCmd.AddCommand(model.CmdModel)
 }
 
 func main() {
